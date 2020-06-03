@@ -1,2 +1,2 @@
-# 20203045	 yujin kim
+# 2020XXX	 yujin kim
 # Kookmin Univ. SW
