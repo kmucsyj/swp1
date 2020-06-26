@@ -9,10 +9,13 @@ def application(environ, start_response):
     if '' in [a, b]:
 	print("값을 입력하세요")
 
-    if '' not in [a, b]:
+    try:
         a, b = int(a), int(b)
         x = a+b
         y = a * b
+    except ValueError:
+	sum = -1
+	mul = -1
 
     response_body = html % {
         'Sum' : x,
